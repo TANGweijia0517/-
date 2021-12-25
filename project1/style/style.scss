@@ -1,39 +1,93 @@
 $colors:(purple:rgb(195, 90, 236));
 
 body { 
-    width: 86%;
+    width: 84%;
     margin-left: 7%;
 }
 
-
 .nav{
+    
     text-align: center;
+    margin-top: 40px;
 }
 
 .nav__mobile{
     display: none;
+    margin-top: 20px;
+    
 }
 
 .nav__content li{
     display:inline;
     margin-right: 5%;
-    
 }
 
 .nav__content li a{
     font-size: 0.5vw;
     color: black;
     text-decoration: none;
-    padding: 1em;margin: 1em;
+    padding: 1.3em;margin: 1em;
     background-image: linear-gradient(map-get($colors, purple), map-get($colors, purple)), linear-gradient(white, white);
     background-size: 0 5px, auto;
     background-repeat: no-repeat;
     background-position: center bottom;
     transition: all .2s ease-out;
-    
 }
 
 .nav__content li a:hover{
+    color: map-get($colors, purple);
+    background-size: 100% 5px, auto;
+}
+
+.mainContent{
+   
+    width: 90%;
+    margin-left: 5%;
+}
+
+.content__about{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.content__about__info{
+    width: 90%;
+    margin-left: 5%;
+    
+}
+
+.content__about__info h1{
+    font-size: 4vw;
+    color: rgb(31, 4, 56);
+    margin: 0;
+}
+
+.content__about__info p{
+    font-size: 1vw;
+}
+
+.content__about__info__icons i{
+    font-size: 25px;
+    color: map-get($colors, purple);
+}
+
+.content__about__info__icons i:hover{
+    color: rgb(122, 22, 117);
+}
+
+.content__about__info a{
+    text-decoration: none;
+    color: rgb(122, 22, 117);
+    padding-bottom: 5px;
+    background-image: linear-gradient(map-get($colors, purple), map-get($colors, purple)), linear-gradient(white, white);
+    background-size: 0 5px, auto;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    transition: all .15s ease-out;
+}
+
+.content__about__info a:hover{
     color: map-get($colors, purple);
     background-size: 100% 5px, auto;
 }
@@ -42,14 +96,13 @@ body {
 // response
 @media only screen and (max-width: 1200px) {
     body { 
-        width:100%;
-        margin-left: 0%;
+        width:94%;
+        margin-left: 3%;
     }
 
     .nav__content li{
         margin-right: 0.5%;
     }
-
 }
 @media only screen and (max-width: 600px) {
     .nav{
@@ -62,7 +115,11 @@ body {
         font-size: 5vw;
     }
 
+    .content__about{
+        display: unset;
+        flex-direction:unset;
 
+    }
 }
 
 
