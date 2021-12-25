@@ -1,0 +1,59 @@
+body {
+  width: 86%;
+  margin-left: 7%;
+}
+
+.nav {
+  text-align: center;
+}
+
+.nav__mobile {
+  display: none;
+}
+
+.nav__content li {
+  display: inline;
+  margin-right: 5%;
+}
+
+.nav__content li a {
+  font-size: 0.5vw;
+  color: black;
+  text-decoration: none;
+  padding: 1em;
+  margin: 1em;
+  background-image: linear-gradient(#c35aec, #c35aec), linear-gradient(white, white);
+  background-size: 0 5px, auto;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  transition: all 0.2s ease-out;
+}
+
+.nav__content li a:hover {
+  color: #c35aec;
+  background-size: 100% 5px, auto;
+}
+
+@media only screen and (max-width: 1200px) {
+  body {
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  .nav__content li {
+    margin-right: 0.5%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .nav {
+    display: none;
+  }
+
+  .nav__mobile {
+    display: block;
+    margin-left: 90%;
+    font-size: 5vw;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
