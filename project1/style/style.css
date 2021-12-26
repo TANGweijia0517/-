@@ -1,6 +1,6 @@
 body {
-  width: 84%;
-  margin-left: 7%;
+  width: 80%;
+  margin-left: 10%;
 }
 
 .nav {
@@ -36,9 +36,36 @@ body {
   background-size: 100% 5px, auto;
 }
 
+.subNav {
+  position: fixed;
+  top: 200px;
+  margin-left: 75%;
+}
+
+.subNav__li {
+  margin-bottom: 40px;
+}
+
+.subNav__li a {
+  text-decoration: none;
+  color: #5e5b5b;
+  font-size: 0.6vw;
+  padding: 1.3em;
+  margin: 1em;
+  background-image: linear-gradient(#c35aec, #c35aec), linear-gradient(white, white);
+  background-size: 0 5px, auto;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  transition: all 0.2s ease-out;
+}
+
+.subNav__li a:hover {
+  color: #c35aec;
+  background-size: 100% 5px, auto;
+}
+
 .mainContent {
   width: 90%;
-  margin-left: 5%;
 }
 
 .content__about {
@@ -87,6 +114,83 @@ body {
   background-size: 100% 5px, auto;
 }
 
+.fas {
+  line-height: unset;
+}
+
+.education__header {
+  display: flex;
+  flex-direction: row;
+  margin-top: 60px;
+}
+
+.education__header i {
+  padding: 20px;
+  border: 1.3px solid black;
+  margin-right: 15px;
+  font-size: 2.5vw;
+  color: #c35aec;
+}
+
+.education__header__h1 {
+  font-size: 2.5vw;
+}
+
+.education__session {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.education__session__timeline {
+  width: 80%;
+}
+
+.education__session__img img {
+  width: 80%;
+  max-width: 1000px;
+  margin-left: 10%;
+}
+
+.education__session ul, li {
+  list-style: none;
+  padding: 0;
+}
+
+.education__timeline__li {
+  padding-bottom: 3rem;
+  border-left: 1px solid #abaaed;
+  position: relative;
+  padding-left: 20px;
+  margin-left: 10px;
+}
+.education__timeline__li:last-child {
+  padding-bottom: 0;
+}
+.education__timeline__li:before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: white;
+  border: 1px solid #4e5ed3;
+  box-shadow: 3px 3px 0px #bab5f8;
+  box-shadow: 3px 3px 0px #bab5f8;
+  border-radius: 50%;
+  position: absolute;
+  left: -10px;
+  top: 0px;
+}
+
+.education__timeline__li h2 {
+  font-size: 1.5vw;
+  margin: 0;
+}
+
+.education__timeline__li p {
+  font-size: 1vw;
+  color: #7c6e6e;
+}
+
 @media only screen and (max-width: 1200px) {
   body {
     width: 94%;
@@ -95,6 +199,12 @@ body {
 
   .nav__content li {
     margin-right: 0.5%;
+  }
+
+  .education__session__img img {
+    width: 60%;
+    max-width: 600x;
+    margin-left: 20%;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -111,6 +221,17 @@ body {
   .content__about {
     display: unset;
     flex-direction: unset;
+  }
+
+  .education__session__img img {
+    width: 80%;
+    max-width: 1000px;
+    margin-left: 10%;
+    display: none;
+  }
+
+  .subNav {
+    display: none;
   }
 }
 
