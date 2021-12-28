@@ -170,7 +170,11 @@ body {
 .education__timeline__li{
     padding-bottom: 3rem;
     border-left: 1px solid #abaaed;
-    position: relative;
+   .education__header{
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+} position: relative;
     padding-left: 20px;
     margin-left: 10px;
     &:last-child{
@@ -202,12 +206,117 @@ body {
     color: rgb(124, 110, 110);
 }
 
+//research
+.research__header{
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+}
+
+.research__header i{
+    padding: 20px;
+    border:1.3px solid black;
+    margin-right: 15px;
+    font-size: 2.5vw;
+    color: map-get($colors, purple );
+}
+
+.research__session{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.research__session__content{
+    position: relative;
+    width: 30%;
+    height: 360px;
+    margin-right: 1%;
+    background-color: rgb(228, 227, 228);
+    margin-bottom: 20px;
+    text-align: center;
+    i{
+        margin-top: 70px;
+        font-size: 40px;
+        margin-bottom: 10px;
+        color: map-get($colors, purple );
+    }
+
+    .research__session__content__h2{
+        font-size: 1.3vw;
+    }
+
+    .research__session__content__p{
+        position: absolute;
+        width: 100%;
+        bottom: 70px;
+        height: 105px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4; 
+        p{
+            font-size: 16px;
+            width: 80%;
+            margin-left: 10%;
+        }
+    }
+
+    .research__session__content__tri{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        width: 0;
+        height: 0;
+        border-bottom: 60px solid rgb(216, 160, 224);
+        border-left: 60px solid rgb(228, 227, 228);
+    }
+
+    .research__session__content__button{
+        position: absolute;
+        bottom: 6px;
+        right: 6px;
+    }
+
+    .research__session__content__button i{
+        color: map-get($colors, purple );
+        margin: unset;
+        font-size: 22px;
+    }
+
+}
+
+#research__session__mid{
+    background-image: url(/images//purple.jpg);
+    position: relative;
+    display: table-cell;
+    text-align: left;
+
+    p{
+        width: 80%;
+        margin-left: 13%;
+        padding-top: 30%;
+        color: wheat;
+        font-style: italic;
+
+    }
+}
 
 // response
 @media only screen and (max-width: 1200px) {
     body { 
         width:94%;
         margin-left: 3%;
+        
+        line-height: 1.55;
+        
+    }
+
+    .mainContent{
+        width: 85%;
     }
 
     .nav__content li{
@@ -219,8 +328,20 @@ body {
         max-width: 600x;
         margin-left: 20%;
     }
+
+    .research__session__content{
+        width: 48%;
+    }
 }
 @media only screen and (max-width: 600px) {
+    body{
+        width: 100%;
+    }
+    .mainContent{
+        
+        margin-left: 5%;
+    }
+
     .nav{
         display:none;
     }
@@ -236,6 +357,10 @@ body {
         flex-direction:unset;
     }
 
+    .education__header i{
+        font-size: 40px;
+    }
+
     .education__session__img img{
         width: 80%;
         max-width: 1000px;
@@ -245,6 +370,14 @@ body {
 
     .subNav{
         display: none;
+    }
+
+    .research__header i{
+        font-size: 40px;
+    }
+
+    .research__session__content{
+        width: 100%;
     }
 }
 
