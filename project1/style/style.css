@@ -65,7 +65,8 @@ body {
 }
 
 .mainContent {
-  width: 90%;
+  width: 80%;
+  margin-left: 10%;
 }
 
 .content__about {
@@ -86,7 +87,7 @@ body {
 }
 
 .content__about__info p {
-  font-size: 1vw;
+  font-size: 0.8vw;
 }
 
 .content__about__info__icons i {
@@ -114,10 +115,6 @@ body {
   background-size: 100% 5px, auto;
 }
 
-.fas {
-  line-height: unset;
-}
-
 .education__header {
   display: flex;
   flex-direction: row;
@@ -132,14 +129,10 @@ body {
   color: #c35aec;
 }
 
-.education__header__h1 {
-  font-size: 2.5vw;
-}
-
 .education__session {
   display: flex;
   flex-direction: row;
-  margin-top: 20px;
+  margin-top: 80px;
 }
 
 .education__session__timeline {
@@ -200,6 +193,7 @@ body {
   display: flex;
   flex-direction: row;
   margin-top: 60px;
+  margin-bottom: 80px;
 }
 
 .research__header i {
@@ -285,6 +279,56 @@ body {
   font-style: italic;
 }
 
+.publications__header {
+  display: flex;
+  flex-direction: row;
+  margin-top: 60px;
+}
+
+.publications__header i {
+  padding: 20px;
+  border: 1.3px solid black;
+  margin-right: 15px;
+  font-size: 2.5vw;
+  color: #c35aec;
+}
+
+.publications__sessions {
+  display: flex;
+  flex-direction: column;
+}
+.publications__sessions .publications__session {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  height: 250px;
+}
+.publications__sessions .publications__session img {
+  height: 100%;
+  margin-right: 40px;
+}
+.publications__sessions .publications__session .publications__session__content {
+  display: flex;
+  flex-direction: column;
+}
+.publications__sessions .publications__session .publications__session__content h2 {
+  margin: unset;
+  font-size: 1.3vw;
+  margin-top: 40px;
+  margin-bottom: 20PX;
+}
+.publications__sessions .publications__session .publications__session__content h3 {
+  margin: unset;
+  font-size: 0.8vw;
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 20PX;
+}
+.publications__sessions .publications__session .publications__session__content p {
+  margin: unset;
+  font-size: 0.8vw;
+}
+
 @media only screen and (max-width: 1200px) {
   body {
     width: 94%;
@@ -294,6 +338,7 @@ body {
 
   .mainContent {
     width: 85%;
+    margin-left: 0;
   }
 
   .nav__content li {
@@ -308,6 +353,10 @@ body {
 
   .research__session__content {
     width: 48%;
+  }
+
+  .publications__sessions {
+    height: 150px;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -355,6 +404,21 @@ body {
 
   .research__session__content {
     width: 100%;
+  }
+
+  .publications__sessions {
+    margin-top: 20px;
+  }
+  .publications__sessions img {
+    display: none;
+  }
+  .publications__sessions .publications__session {
+    height: 100px !important;
+    margin-bottom: 50px !important;
+  }
+
+  .publications__session__content h2 {
+    margin-top: 10px !important;
   }
 }
 
