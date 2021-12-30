@@ -353,6 +353,67 @@ body {
     }
 }
 
+//teaching
+.teaching__header{
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+}
+
+.teaching__header i{
+    padding: 20px;
+    border:1.3px solid black;
+    margin-right: 15px;
+    font-size: 2.5vw;
+    color: map-get($colors, purple );
+}
+
+.teaching__sessions{
+    margin-top: 40px;
+    margin-bottom: 60px;
+    .teaching__selects{
+        display: flex;
+        flex-direction: row;
+        .teaching__select{
+            text-align: center;
+            width: 30%;
+            margin-right: 1%;
+
+            p{
+                font-size: 1vw;
+                color: black;
+                text-decoration: none;
+                padding: 1.3em;margin: 1em;
+                background-image: linear-gradient(map-get($colors, purple), map-get($colors, purple)), linear-gradient(white, white);
+                background-size: 0 5px, auto;
+                background-repeat: no-repeat;
+                background-position: center bottom;
+                transition: all .2s ease-out;
+            }
+            p:hover{
+                color: map-get($colors, purple);
+                background-size: 100% 5px, auto;
+            }
+        }
+    }
+
+    .teaching__session{
+        h2{
+            font-size: 1.3vw;
+            i{
+                margin-left: 20px;
+                margin-right: 10px;
+            }
+        }
+
+        p{
+            font-size: 1vw;
+            margin-left: 20px;
+        }
+        margin-bottom: 40px;
+    }
+}
+
 
 
 // response
@@ -360,9 +421,7 @@ body {
     body { 
         width:94%;
         margin-left: 3%;
-        
         line-height: 1.55;
-        
     }
 
     .mainContent{
@@ -384,8 +443,14 @@ body {
         width: 48%;
     }
 
-    .publications__sessions{
-        height: 150px;
+    .publications__session{
+        height: 150px !important;
+        .publications__session__content{
+            h2{
+                margin-top: 20px !important;
+            }
+           
+        }
     }
 }
 
@@ -394,7 +459,6 @@ body {
         width: 100%;
     }
     .mainContent{
-        
         margin-left: 5%;
     }
 

@@ -329,6 +329,64 @@ body {
   font-size: 0.8vw;
 }
 
+.teaching__header {
+  display: flex;
+  flex-direction: row;
+  margin-top: 60px;
+}
+
+.teaching__header i {
+  padding: 20px;
+  border: 1.3px solid black;
+  margin-right: 15px;
+  font-size: 2.5vw;
+  color: #c35aec;
+}
+
+.teaching__sessions {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+.teaching__sessions .teaching__selects {
+  display: flex;
+  flex-direction: row;
+}
+.teaching__sessions .teaching__selects .teaching__select {
+  text-align: center;
+  width: 30%;
+  margin-right: 1%;
+}
+.teaching__sessions .teaching__selects .teaching__select p {
+  font-size: 1vw;
+  color: black;
+  text-decoration: none;
+  padding: 1.3em;
+  margin: 1em;
+  background-image: linear-gradient(#c35aec, #c35aec), linear-gradient(white, white);
+  background-size: 0 5px, auto;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  transition: all 0.2s ease-out;
+}
+.teaching__sessions .teaching__selects .teaching__select p:hover {
+  color: #c35aec;
+  background-size: 100% 5px, auto;
+}
+.teaching__sessions .teaching__session {
+  margin-bottom: 40px;
+}
+.teaching__sessions .teaching__session h2 {
+  font-size: 1.3vw;
+}
+.teaching__sessions .teaching__session h2 i {
+  margin-left: 20px;
+  margin-right: 10px;
+}
+.teaching__sessions .teaching__session p {
+  font-size: 1vw;
+  margin-left: 20px;
+}
+
 @media only screen and (max-width: 1200px) {
   body {
     width: 94%;
@@ -355,8 +413,11 @@ body {
     width: 48%;
   }
 
-  .publications__sessions {
-    height: 150px;
+  .publications__session {
+    height: 150px !important;
+  }
+  .publications__session .publications__session__content h2 {
+    margin-top: 20px !important;
   }
 }
 @media only screen and (max-width: 600px) {
