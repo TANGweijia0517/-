@@ -8,17 +8,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="/style/style.css" />
 		<script src="https://kit.fontawesome.com/f582996dbb.js" crossorigin="anonymous"></script>
+		<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.js"></script>
+		<script defer src="/JavaScript/javascript.js"></script>
 	</head>
 	<body>
 		<header>
 			<div class="nav">
 				<ul class="nav__content">
-					<li><a href="#">01_ABOUT</a></li>
-					<li><a href="#">02_EDUCATION</a></li>
-					<li><a href="#">03_RESEARCH</a></li>
-					<li><a href="#">04_PUBLICATIONS</a></li>
-					<li><a href="#">05_TEACHING</a></li>
-					<li><a href="#">06_CONTACTS</a></li>
+					<li><a href="#content__about">01_ABOUT</a></li>
+					<li><a href="#content__timeline">02_timeline</a></li>
+					<li><a href="#skills">03_skills</a></li>
+					<li><a href="#content__education">04_education</a></li>
+					<li><a href="#content__experience">05_experience</a></li>
+					<li><a href="#content__contacts">06_CONTACTS</a></li>
 				</ul>
 			</div>
 			<div class="nav__mobile">
@@ -26,193 +28,280 @@
 			</div>
 		</header>
 
-		<div class="content__about">
-			<div class="content__about__image">
-				<img src="/images/zheran.jfif" alt="zheran">
-			</div>
-			<div class="content__about__info">
-				<h1>Zheran Zhang</h1>
-				<p>Devops developer, tutor of comp, graduated of University of Queensland</p>
-				<div class="content__about__info__icons">
-					<i class="fab fa-invision"></i>
-					<i class="fab fa-facebook-square"></i>
-					<i class="fab fa-twitter-square"></i>
-				</div>
-				<p class="content__about__introduction">Hello! <br>
-					I’m Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo quat. Duis aute irure! Dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<a href="#">DOWNLOAD CV</a>
-			</div>
-		</div>
-
 		<div class="subNav">
 			<ul class="subNav__ul">
-				<li class="subNav__li"><a href="#">01_ABOUT</a></li>
-				<li class="subNav__li"><a href="#">02_EDUCATION</a></li>
-				<li class="subNav__li"><a href="#">03_RESEARCH</a></li>
-				<li class="subNav__li"><a href="#">04_PUBLICATIONS</a></li>
-				<li class="subNav__li"><a href="#">05_TEACHING</a></li>
-				<li class="subNav__li"><a href="#">06_CONTACTS</a></li>
+				<li class="subNav__li"><a href="#content__about">01_ABOUT</a></li>
+				<li class="subNav__li"><a href="#content__timeline">02_timeline</a></li>
+				<li class="subNav__li"><a href="#skills">03_skills</a></li>
+				<li class="subNav__li"><a href="#content__education">04_education</a></li>
+				<li class="subNav__li"><a href="#content__experience">05_experience</a></li>
+				<li class="subNav__li"><a href="#content__contacts">06_CONTACTS</a></li>
 			</ul>
 		</div>
 
 		<div class="mainContent">
-			<div class="content__education">
-				<div class="education__header">
+			<div id="content__about">
+				<div class="content__about__image">
+					<img src="/images/zheran.jfif" alt="zheran">
+				</div>
+				<div class="content__about__info">
+					<h1>Zheran Zhang</h1>
+					<p>Devops developer in WiseTech, graduated of University of Queensland</p>
+					<div class="content__about__info__icons">
+						<i class="fab fa-invision"></i>
+						<i class="fab fa-facebook-square"></i>
+						<i class="fab fa-twitter-square"></i>
+					</div>
+					<p class="content__about__introduction">Hello! <br>
+						My name is Ken, and I am a new graduate student from the University of Queensland, and I am also the teaching assistant in University of Queensland.
+						 I started my computer science career in high school. At that time, I had already practiced a lot of open-source software used in the production environment. Now I work for WiseTech.</p>
+					<a href="#">DOWNLOAD CV</a>
+				</div>
+			</div>
+
+			<div id="content__timeline">
+				<div class="timeline__header">
 					<i class="fas fa-graduation-cap"></i>
 					<!-- <i class="fas fa-user-graduate"></i>
 					<i class="fas fa-network-wired"></i> -->
-					<h1 class="education__header__h1">Education</h1>
+					<h1 class="timeline__header__h1">timeline</h1>
 				</div>
-				<div class="education__session">
-					<div class="education__session__timeline">
-						<ul class="education__timeline__ul">
-							<li class="education__timeline__li">
+				<div class="timeline__session">
+					<div class="timeline__session__timeline">
+						<ul class="timeline__timeline__ul">
+							<li class="timeline__timeline__li">
+								<p class="timeline__timeline__li__header">2017-2018</p>
 								<div>
-								  	<h2>09:00 AM</h2>
+								  	<h2>DevOps, Program Peak Developing Team</h2>
 								</div>
-							  	<p>How is it already 9:00? Just how??? 🤯🤯How is it already 9:00? Just how??? 🤯🤯</p>
+							  	<p>Providing 99.99 percent availability of CI/CD, monitoring, logging audit, load balancing,
+									caching, and server high availability through open source tool chains that includes Zabbix,
+									ELK, HaProxy, and Nginx. Log data transfer via HA Kafka was implemented.</p>
 							</li>
-							<li class="education__timeline__li">
+							<li class="timeline__timeline__li">
+								<p class="timeline__timeline__li__header">2020-2021</p>
 								<div>
-									<h2>09:00 AM</h2>
+									<h2>Tutor, University of Queensland</h2>
 							  	</div>
-								<p>How is it already 9:00? Just how??? 🤯🤯</p>
+								<p>Teaching Computer Networking in the University course with 200+ participants, which was
+									the largest number of students among all sessions in the university.
+									</p>
 						  	</li>
-						  	<li class="education__timeline__li">
+						  	<li class="timeline__timeline__li">
+								<p class="timeline__timeline__li__header">2022-now</p>
 								<div>
-									<h2>09:00 AM</h2>
+									<h2>DevOps, WiseTech</h2>
 						  		</div>
-								<p>How is it already 9:00? Just how??? 🤯🤯</p>
+								<p>Currently working for WiseTech Global</p>
 					 		</li>	
 						  </ul>
 					</div>
-					<div class="education__session__img">
+					<div class="timeline__session__img">
 						<img src="/images/uq.jpg">
 					</div>
 				</div>
 			</div>
-			<div class="research">
-				<div class="research__header">
+			<div id="skills">
+				<div class="skills__header">
 					<i class="fas fa-network-wired"></i>
-					<h1 class="research__header__h1">Research</h1>
+					<h1 class="skills__header__h1">Skills</h1>
 				</div>
 
-				<div class="research__session" >
-					<div class="research__session__content">
+				<div  class="skills__session" >
+					<div id="tri1" class="skills__session__content">
 						<i class="fas fa-laptop"></i>
-						<h2 class="research__session__content__h2">super super supercoding skills</h2>
-						<div class="research__session__content__p">
-							<p>i am good at java,v,i am good at java,i am good at java,i am good at java,i am good at java,i am good at java,i am good at java,i am good at java,i am good at java,i am good at java,i am good at java,i am good at java,i am good at java,i am good at java,</p>
+						<h2 class="skills__session__content__h2">Programming Languages</h2>
+						<div class="skills__session__content__p">
+							<p>Experienced: Python, Java <br>
+								Familiar: C++, C#, C, Golang, JavaScript, Clojure, Haskell</p>
 						</div>
-						<div class="research__session__content__tri"></div>
-						<div class="research__session__content__button">
+						<div  class="skills__session__content__tri"></div>
+						<div value="tri1" class="skills__session__content__button">
 							<i class="fas fa-chevron-circle-right"></i>
 						</div>
 					</div>
 
-					<div class="research__session__content">
+					<div id="tri2" class="skills__session__content">
 						<i class="fas fa-network-wired"></i>
-						<h2 class="research__session__content__h2">dd</h2>
-						<div class="research__session__content__p">
-							<p></p>
+						<h2 class="skills__session__content__h2">Cloud Computing</h2>
+						<div class="skills__session__content__p">
+							<p>Experienced the operations of Linux (RHEL, CentOS, Ubuntu Server), and also well-versed in
+								container orchestration tools like K8s. Knowledgeable in Python automation, database administration,
+								and cloud computing platforms such as AWS services (EC2, S3) and Google Cloud Platform services
+								(GCE).</p>
 						</div>
-						<div class="research__session__content__tri"></div>
-						<div class="research__session__content__button">
-							<i class="fas fa-chevron-circle-right"></i>
-						</div>
-					</div>
-
-					<div class="research__session__content">
-						<i></i>
-						<h2 class="research__session__content__h2"></h2>
-						<div class="research__session__content__p">
-							<p></p>
-						</div>
-						<div class="research__session__content__tri"></div>
-						<div class="research__session__content__button">
-							<i class="fas fa-chevron-circle-right"></i>
-						</div>
-					</div>
-
-					<div class="research__session__content">
-						<i></i>
-						<h2 class="research__session__content__h2"></h2>
-						<div class="research__session__content__p">
-							<p></p>
-						</div>
-						<div class="research__session__content__tri"></div>
-						<div class="research__session__content__button">
-							<i class="fas fa-chevron-circle-right"></i>
-						</div>
-					</div>
-
-					<div id="research__session__mid" class="research__session__content">
 						
-						<p>I am really interested in social research such as psychological experiments, behavioral principles and interpersonal relations.</p>
+						<div  class="skills__session__content__tri"></div>
+						<div value="tri2" class="skills__session__content__button">
+							<i class="fas fa-chevron-circle-right"></i>
+						</div>
+					</div>
+
+					<div id="tri3" class="skills__session__content">
+						<i class="fas fa-network-wired"></i>
+						<h2 class="skills__session__content__h2">Web Development</h2>
+						<div class="skills__session__content__p">
+							<p>Frontend Server: familiar with HTML5, CSS3 (incl. LESS), and JavaScript (incl. ReactJS,
+								jQuery). <br>
+								Frontend UI: familiar with Bootstrap 4, Bootstrap React, Ant Design (React) <br>
+								Backend Server: experienced with Django (Python), Gin (Golang), LNMP (PHP). <br>
+								Backend Database Systems: experienced with MySQL, MongoDB, and ElasticSearch.</p>
+						</div>
+						
+						
+						<div  class="skills__session__content__tri"></div>
+						<div value="tri3" class="skills__session__content__button">
+							<i class="fas fa-chevron-circle-right"></i>
+						</div>
+					</div>
+
+					<div id="tri4" class="skills__session__content">
+						<i class="fas fa-network-wired"></i>
+						<h2 class="skills__session__content__h2">Cyber Security</h2>
+						<div class="skills__session__content__p">
+							<p>Web Penetration Testing with Burp Suite, Nmap, Metasploit, Beef XSS. Understand the principles
+								of various web security vulnerabilities.</p>
+						</div>
+						
+						
+						<div  class="skills__session__content__tri"></div>
+						<div value="tri4" class="skills__session__content__button">
+							<i class="fas fa-chevron-circle-right"></i>
+						</div>
+					</div>
+
+					<div id="skills__session__mid" class="skills__session__content">
+						
+						<p>I am always in favour of studying and never stop learning new techniques, and my knowledge is broad. I think it can benefit my career, and learning new things is my interest as well. </p>
 						
 					</div>
 
-					<div class="research__session__content">
-						<i></i>
-						<h2 class="research__session__content__h2"></h2>
-						<div class="research__session__content__p">
-							<p></p>
+					<div id="tri5"  class="skills__session__content">
+						<i class="fas fa-network-wired"></i>
+						<h2 class="skills__session__content__h2">Database</h2>
+						<div class="skills__session__content__p">
+							<p>Experienced the operations of unrelational databse like MangoDB</p>
 						</div>
-						<div class="research__session__content__tri"></div>
-						<div class="research__session__content__button">
+						
+						
+						<div  class="skills__session__content__tri"></div>
+						<div value="tri5" class="skills__session__content__button">
 							<i class="fas fa-chevron-circle-right"></i>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="content__publications">
-				<div class="publications__header">
+			<div id="content__education">
+				<div class="education__header">
 					<i class="fas fa-project-diagram"></i>
-					<h1 class="publications__header__h1">Publications</h1>
+					<h1 class="education__header__h1">Education Highlight</h1>
 				</div>
-				<div class="publications__sessions">
-					<div class="publications__session">
-						<img src="/images/uq.jpg" alt="test">
-						<div class="publications__session__content">
-							<h2>How can we prevent a glaciers melting?</h2>
-							<h3>Ecology & Safety, Volume 10, 2016</h3>
-							<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+				<div class="education__sessions">
+					<div class="education__session">
+						<img src="/images/python.png" alt="test">
+						<div class="education__session__content">
+							<h2>Python Programming</h2>
+							<h3>2019 semester1</h3>
+							<p>7 out of 7</p>
 						</div>	
 					</div>
 
-					<div class="publications__session">
-						<img src="/images/uq.jpg" alt="test">
-						<div class="publications__session__content">
-							<h2>How can we prevent a glaciers melting?</h2>
-							<h3>Ecology & Safety, Volume 10, 2016</h3>
-							<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					<div class="education__session">
+						<img src="/images/webdesign.jpg" alt="test">
+						<div class="education__session__content">
+							<h2>Web Design & Developing</h2>
+							<h3>2020 semester2</h3>
+							<p>6 out of 7</p>
 						</div>	
 					</div>
+
+					<div class="education__session">
+						<img src="/images/cybersecurity.jpg" alt="test">
+						<div class="education__session__content">
+							<h2>Cyber Security</h2>
+							<h3>2020 semester1</h3>
+							<p>6 out of 7</p>
+						</div>	
+					</div>
+
+					<div class="education__session">
+						<img src="/images/data.png" alt="test">
+						<div class="education__session__content">
+							<h2>Data Structure semester1</h2>
+							<h3>2021</h3>
+							<p>6 out of 7</p>
+						</div>	
+					</div>
+
+					
 				</div>
 			</div>
 			
-			<div class="content__teaching">
-				<div class="teaching__header">
+			<div id="content__experience">
+				<div class="experience__header">
 					<i class="fas fa-code"></i>
-					<h1 class="teaching__header__h1">Teaching</h1>
+					<h1 class="experience__header__h1">experience</h1>
 				</div>
-				<div class="teaching__sessions">
-					<div class="teaching__selects">
-						<div class="teaching__select"><p>1</p></div>
-						<div class="teaching__select"><p>2</p></div>
-						<div class="teaching__select"><p>3</p></div>
+				<div class="experience__sessions">
+					<div class="experience__selects">
+						<div id="experience__select__default" class="experience__select" value="work"><p>WORK EXPERIENCE</p></div>
+						<div  class="experience__select" value="volunteer"><p>VOLUNTEER EXPERIENCE</p></div>
+						<div  class="experience__select" value="project"><p>PROJECT EXPERIENCE</p></div>
 					</div>
-					<div class="teaching__session">
-						<h2><i class="fas fa-book"></i>htllo</h2>
-						<p>heeeelo</p>
+					<div id="experience__work" class ="experience__content">
+						<div class="experience__session">
+							<h2><i class="fas fa-book"></i>Tutor, University of Queensland</h2>
+							<p>Teaching Computer Networking in the University course with 200+ participants, which was
+								the largest number of students among all sessions in the university.</p>
+							<p>Teaching Cyber Security Courses in UQ and helping professors select research students.</p>
+						</div>
+						<div class="experience__session">
+							<h2><i class="fas fa-book"></i>DevOps, Program Peak Developing Team, China (Remote)</h2>
+							<p>Providing 99.99 percent availability of CI/CD, monitoring, logging audit, load balancing,
+								caching, and server high availability through open source tool chains that includes Zabbix,
+								ELK, HaProxy, and Nginx. Log data transfer via HA Kafka was implemented.
+							</p>
+							<p>Initiated and established the emergency procedures for data loss and service unavailability.</p>
+							<p>Helped the team deploy the Django web on K8s with my experience on the CNCF (Cloud
+								Native) Ecology</p>
+						</div>
 					</div>
-					<div class="teaching__session">
-						<h2><i class="fas fa-book"></i>htllo</h2>
-						<p>heeeelo</p>
+					<div id="experience__volunteer" class="experience__content">
+						<div class="experience__session">
+							<h2><i class="fas fa-book"></i>Volunteer, KubeCon China, 2019</h2>
+							<p>Helped Ant Financial Group (pre-IPO) with testing Canary releases, Service Mesh, Distributed
+								Transactions and Serverless before KubeCon workshops.</p>
+						</div>
+						<div class="experience__session">
+							<h2><i class="fas fa-book"></i>Volunteer, KubeCon North America, 2019</h2>
+							<p>Interviewed with the CNCF TOC (Technical Oversight Committee) member about the study direction
+								in computer science, K8s, and Cloud Native. Photography of presentations and events.</p>
+						</div>
 					</div>
+					<div id="experience__project" class="experience__content">
+						<div class="experience__session">
+							<h2><i class="fas fa-book"></i>Skyscraper - Overseas People Healthcare Assistance</h2>
+							<p>As the main developer, developed the core features of the application, built a full-stack web
+								application project using ReactJS, LESS CSS, and Gin.
+								</p>
+						</div>
+						<div class="experience__session">
+							<h2><i class="fas fa-book"></i>Clinical Informatics Systems Based On FHIR Workflows</h2>
+							<p>As the team leader, build an application developed for clients from CSIRO, using production level
+								patient data, based on the FHIR API to process the radiological clinical workflows.
+								</p>
+						</div>
+						<div class="experience__session">
+							<h2><i class="fas fa-book"></i>Automated deployed & scaling supported DevOps Pipeline
+							</h2>
+							<p>Automated deployed & scaling supported DevOps Pipeline
+							</p>
+						</div>
+					</div>
+					
 				</div>
 			</div>
-			<div class="content__contacts">
+			<div id="content__contacts">
 				<div class="contacts__header">
 					<i class="fas fa-envelope-open"></i>
 					<h1 class="contacts__header__h1">Contact</h1>
@@ -226,7 +315,10 @@
 							<i class="fab fa-facebook-square"></i>
 							<i class="fab fa-twitter-square"></i>
 						</div>
-						<p>location:</p>
+						<p>location: <br> Control Systems Lab,<br>
+							Building W,<br>
+							Chemical Engineering Department,<br>
+							National Technological University of Roma</p>
 					</div>
 					<form class="contacts__session__form">
 						<label>Your name</label><br>
@@ -235,7 +327,7 @@
 						<input class="contacts__session__form__input" type="text" id="mail" name="mail" placeholder="yourmail@mail.com"><br>
 						<label>Message text</label><br>
 						<!-- <input class="contacts__session__form__message" type="text" id="message" name="message" placeholder="White here your question or interesting offer"><br> -->
-						<textarea class="contacts__session__form__input" rows=3" placeholder="White here your question or interesting offer"></textarea>
+						<textarea class="contacts__session__form__input" rows=3 placeholder="White here your question or interesting offer"></textarea>
 						<fieldset class="contacts__session__form__field">
 							<input class="contacts__session__form__submit" type="submit" value="Submit">
 						</fieldset>
@@ -245,8 +337,18 @@
 			</div>
 		</div>
 		<footer>
-
+			<div class="nav">
+				<ul class="nav__content">
+					<li><a href="#content__about">01_ABOUT</a></li>
+					<li><a href="#content__timeline">02_timeline</a></li>
+					<li><a href="#skills">03_skills</a></li>
+					<li><a href="#content__education">04_education</a></li>
+					<li><a href="#content__experience">05_experience</a></li>
+					<li><a href="#content__contacts">06_CONTACTS</a></li>
+				</ul>
+			</div>
+			<P class="footer__p">Weijia Tang. Copyright 	&copy; 2021.</P>
 		</footer>
 	</body>
-
+	
 </html>
