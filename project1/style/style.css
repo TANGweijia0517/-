@@ -447,6 +447,7 @@ body {
   display: flex;
   flex-direction: row;
   margin-top: 80px;
+  margin-bottom: 40px;
 }
 .contacts__sessions .contacts__session__myInfo {
   width: 40%;
@@ -501,6 +502,7 @@ footer {
 .footer__p {
   color: #686767;
   font-size: 8px;
+  margin-bottom: 40px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -555,8 +557,8 @@ footer {
     font-size: 5vw;
   }
 
-  .content__about {
-    display: unset;
+  #content__about {
+    display: unset !important;
     flex-direction: unset;
   }
 
