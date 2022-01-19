@@ -13,15 +13,15 @@ router.route('/create').post((req,res) => {
     newNote.save();
 })
 
-router.route('/notes').get((req,res)=>{
-    Note.find().then(foundNotes => res.json(foundNotes));
-    // Note.find({},function(err,data){
-    //     if(!err){
-    //         console.log(data)
-    //     }else{
-    //         console.log(err)
-    //     }
-    // }).then(foundNotes => res.json(foundNotes))
-})
+// router.route('/notes').get((req,res)=>{
+//     Note.find().then(foundNotes => res.json(foundNotes));
+//     // Note.find({},function(err,data){
+//     //     if(!err){
+//     //         console.log(data)
+//     //     }else{
+//     //         console.log(err)
+//     //     }
+//     // }).then(foundNotes => res.json(foundNotes))
+// })
 
 module.exports= router;
